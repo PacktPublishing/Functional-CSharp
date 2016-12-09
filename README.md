@@ -1,4 +1,4 @@
-#Functional CSharp
+#Functional C#
 This is the code repository for [Functional C#](https://www.packtpub.com/application-development/functional-c?utm_source=github&utm_campaign=9781785282225&utm_medium=repository), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
 
 ##About the Book
