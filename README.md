@@ -29,9 +29,11 @@ namespace ActionFuncDelegates
 
 
 ##Related C# topics:
-[C# 6 and .NET Core 1.0: Modern Cross-Platform Development](https://www.packtpub.com/application-development/c-6-and-net-core-10?utm_source=github&utm_campaign=9781785285691&utm_medium=repository)
-[Unity 5: Learning C# by Developing Games](https://www.packtpub.com/game-development/unity-5-learning-c-developing-games?utm_source=github&utm_campaign=9781787127272&utm_medium=repository)
-[C# Multithreaded and Parallel Programming](https://www.packtpub.com/application-development/c-multithreaded-and-parallel-programming?utm_source=github&utm_campaign=9781849688321&utm_medium=repository)
+* [C# 6 and .NET Core 1.0: Modern Cross-Platform Development](https://www.packtpub.com/application-development/c-6-and-net-core-10?utm_source=github&utm_campaign=9781785285691&utm_medium=repository)
+
+* [Unity 5: Learning C# by Developing Games](https://www.packtpub.com/game-development/unity-5-learning-c-developing-games?utm_source=github&utm_campaign=9781787127272&utm_medium=repository)
+
+* [C# Multithreaded and Parallel Programming](https://www.packtpub.com/application-development/c-multithreaded-and-parallel-programming?utm_source=github&utm_campaign=9781849688321&utm_medium=repository)
 
 
 ### Suggestions and Feedback
