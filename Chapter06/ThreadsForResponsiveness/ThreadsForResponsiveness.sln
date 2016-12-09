@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.25928.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplyingThreads", "ApplyingThreads\ApplyingThreads.csproj", "{0299DAEE-1E8C-47A1-9FB4-DC0BE8EEDE7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronousOperation", "SynchronousOperation\SynchronousOperation.csproj", "{34849584-D3A6-4275-87E1-F018BBD17A07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingThreadPool", "UsingThreadPool\UsingThreadPool.csproj", "{125D4BDE-8862-4BD0-86B1-44B5C008E271}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0299DAEE-1E8C-47A1-9FB4-DC0BE8EEDE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0299DAEE-1E8C-47A1-9FB4-DC0BE8EEDE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0299DAEE-1E8C-47A1-9FB4-DC0BE8EEDE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0299DAEE-1E8C-47A1-9FB4-DC0BE8EEDE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34849584-D3A6-4275-87E1-F018BBD17A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34849584-D3A6-4275-87E1-F018BBD17A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34849584-D3A6-4275-87E1-F018BBD17A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34849584-D3A6-4275-87E1-F018BBD17A07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125D4BDE-8862-4BD0-86B1-44B5C008E271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125D4BDE-8862-4BD0-86B1-44B5C008E271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125D4BDE-8862-4BD0-86B1-44B5C008E271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125D4BDE-8862-4BD0-86B1-44B5C008E271}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
