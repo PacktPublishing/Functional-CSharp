@@ -25,7 +25,7 @@ namespace ActionFuncDelegates
 ##Software and Hardware List
 | Chapters | Software Required     | OS Required |
 | -------- | --------------------- | ----------- |
-| 1 to 13  | Visual Studio 2017 RC | Windows     |
+| 1 to 11  | Visual Studio 2017 RC | Windows     |
 
 
 ##Related C# topics:
