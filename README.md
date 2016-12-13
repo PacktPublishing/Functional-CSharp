@@ -1,5 +1,5 @@
 #Functional __C#__
-This is the code repository for [Functional C#](https://www.packtpub.com/application-development/functional-c?utm_source=github&utm_campaign=9781785282225&utm_medium=repository), published by [Packt](www.packtpub.com). It contains all the supporting project files necessary to work through the book from start to finish.
+This is the code repository for [Functional C#](https://www.packtpub.com/application-development/functional-c?utm_source=github&utm_campaign=9781785282225&utm_medium=repository), published by [Packt](https://www.packtpub.com/). It contains all the supporting project files necessary to work through the book from start to finish.
 
 ##About the Book
 Functional programming makes your application faster, improves performance, and increases your productivity. C# code is written at a higher level of abstraction, so that code will be closer to business requirements, abstracting away many low-level implementation details.
