@@ -17,7 +17,7 @@ namespace ContinuationPassingStyle
             Console.Write(
                 "5! (using GetFactorialCPS) is ");
             GetFactorialCPS(
-                5, 
+                5,
                 x => Console.WriteLine(x));
         }
     }

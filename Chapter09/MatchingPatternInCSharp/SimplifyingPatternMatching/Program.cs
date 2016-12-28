@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SimplifyingPatternMatching
 {
@@ -62,8 +60,8 @@ namespace SimplifyingPatternMatching
                 .Reverse()
                 .ToList()
                 .Select((c, i) => new { c, i })
-                .Sum((v) => 
-                    HexCharToByteFunctional(v.c) * 
+                .Sum((v) =>
+                    HexCharToByteFunctional(v.c) *
                     (int)Math.Pow(0x10, v.i));
         }
     }
@@ -100,14 +98,14 @@ namespace SimplifyingPatternMatching
         }
     }
 
-    public class IncompletePatternMatchException : 
+    public class IncompletePatternMatchException :
         Exception
     {
     }
 
     public class PatternMatchOnValue<TIn, TOut>
     {
-        private readonly IList<PatternMatchCase> _cases = 
+        private readonly IList<PatternMatchCase> _cases =
             new List<PatternMatchCase>();
         private readonly TIn _value;
         private Func<TIn, TOut> _elseCase;
@@ -118,7 +116,7 @@ namespace SimplifyingPatternMatching
         }
 
         public PatternMatchOnValue<TIn, TOut> With(
-            Predicate<TIn> condition, 
+            Predicate<TIn> condition,
             Func<TIn, TOut> result)
         {
             _cases.Add(new PatternMatchCase
@@ -131,7 +129,7 @@ namespace SimplifyingPatternMatching
         }
 
         public PatternMatchOnValue<TIn, TOut> With(
-            Predicate<TIn> condition, 
+            Predicate<TIn> condition,
             TOut result)
         {
             return With(condition, x => result);
@@ -202,7 +200,7 @@ namespace SimplifyingPatternMatching
         }
 
         public PatternMatchOnValue<TIn, TOut> With<TOut>(
-            Predicate<TIn> condition, 
+            Predicate<TIn> condition,
             TOut result)
         {
             return new PatternMatchOnValue<TIn, TOut>(_value)

@@ -13,13 +13,13 @@ namespace CalculatorImperative
         private static string m_sign;
 
         // Current operator selected (+, -, * or /)
-        public static String m_operator; 
+        public static String m_operator;
 
         // Last result displayed
         private static String m_lastNum;
 
         // Last input made
-        private static String m_lastInput; 
+        private static String m_lastInput;
 
         // If the calculator should start a new input 
         // after a number is hit
@@ -29,13 +29,13 @@ namespace CalculatorImperative
         public static bool m_decimal;
 
         // If the last key that was hit was the equals button
-        private static bool m_lastHitEquals; 
+        private static bool m_lastHitEquals;
 
         static CalcEngine()
         {
             // "." is used to respresent no input
             // which registers as 0
-            m_input = "."; 
+            m_input = ".";
 
             m_sign = "+";
             m_operator = null;
@@ -55,15 +55,15 @@ namespace CalculatorImperative
 
             // Prepend a Zero 
             // if the string begins with a "."
-            if (str.IndexOf(".") == 0) 
+            if (str.IndexOf(".") == 0)
             {
                 str = "0" + str;
             }
 
             // Appened a Zero 
             // if the string ends with a "."
-            if (str.IndexOf(".") == 
-                str.Length - 1) 
+            if (str.IndexOf(".") ==
+                str.Length - 1)
             {
                 str = str + "0";
             }
@@ -72,9 +72,9 @@ namespace CalculatorImperative
             // and there's no "-" 
             // in the current string
             // then "-" is prepended
-            if (m_sign.Equals("-") && 
-                str != "0.0" && 
-                str.IndexOf("-") == -1) 
+            if (m_sign.Equals("-") &&
+                str != "0.0" &&
+                str.IndexOf("-") == -1)
             {
                 str = "-" + str;
             }
@@ -119,7 +119,7 @@ namespace CalculatorImperative
         public static void AppendNum(
             double numValue)
         {
-            if (numValue == Math.Round(numValue) && 
+            if (numValue == Math.Round(numValue) &&
                 numValue >= 0)
             {
                 // Append number to the input string
@@ -143,7 +143,7 @@ namespace CalculatorImperative
                     // Start over if the last key hit 
                     // was the equals button 
                     // and no operators were chosen
-                    if (m_lastHitEquals) 
+                    if (m_lastHitEquals)
                     {
                         ClearAll();
                         m_lastHitEquals = false;
@@ -160,12 +160,12 @@ namespace CalculatorImperative
                     m_wait = false;
                 }
 
-                if (m_input.IndexOf("0", 0, 1) == 0 && 
+                if (m_input.IndexOf("0", 0, 1) == 0 &&
                     m_input.IndexOf(".") > 1)
                 {
                     //Get rid of any extra zeroes 
                     //that may have been prepended
-                    m_input = m_input.Remove(0, 1); 
+                    m_input = m_input.Remove(0, 1);
                 }
             }
             // If they're trying to append a decimal or negative, 
@@ -176,7 +176,7 @@ namespace CalculatorImperative
                 // Start over if the last key hit 
                 // was the equals button 
                 // and no operators were chosen
-                if (m_lastHitEquals) 
+                if (m_lastHitEquals)
                 {
                     ClearAll();
                     m_lastHitEquals = false;
@@ -190,9 +190,9 @@ namespace CalculatorImperative
                     m_input += ".";
                 }
 
-                if (m_input.Contains(".") && 
-                    !(m_input.EndsWith("0") && 
-                    m_input.IndexOf(".") == 
+                if (m_input.Contains(".") &&
+                    !(m_input.EndsWith("0") &&
+                    m_input.IndexOf(".") ==
                         m_input.Length - 2))
                 {
                     m_decimal = true;
@@ -209,13 +209,13 @@ namespace CalculatorImperative
 
                 // Get rid of any extra zeroes 
                 // that may have been prepended or appended
-                if (m_input.IndexOf("0", 0, 1) == 0 && 
+                if (m_input.IndexOf("0", 0, 1) == 0 &&
                     m_input.IndexOf(".") > 1)
                 {
                     m_input = m_input.Remove(0, 1);
                 }
 
-                if (m_input.EndsWith("0") && 
+                if (m_input.EndsWith("0") &&
                     m_input.IndexOf(".") == m_input.Length - 2)
                 {
                     m_input.Remove(m_input.Length - 1);
@@ -224,7 +224,7 @@ namespace CalculatorImperative
                 m_wait = false;
             }
         }
-        
+
         // Get display from input
         public static double GetDisplay()
         {
@@ -382,7 +382,7 @@ namespace CalculatorImperative
                 if (m_input.Equals(""))
                     m_input = "0";
 
-                if (m_lastNum == null || 
+                if (m_lastNum == null ||
                     m_lastNum.Equals(""))
                 {
                     m_lastNum = "0.0";
@@ -405,12 +405,12 @@ namespace CalculatorImperative
                         break;
                     case "-":
                         answer = "" + Convert.ToString(
-                            Convert.ToDouble(m_lastNum) - 
+                            Convert.ToDouble(m_lastNum) -
                             Convert.ToDouble(m_lastInput));
                         break;
                     case "*":
                         answer = "" + Convert.ToString(
-                            Convert.ToDouble(m_lastNum) * 
+                            Convert.ToDouble(m_lastNum) *
                             Convert.ToDouble(m_lastInput));
                         break;
                     case "/":
@@ -418,7 +418,7 @@ namespace CalculatorImperative
                             m_lastInput).Equals("0.0"))
                         {
                             answer = "" + Convert.ToString(
-                                Convert.ToDouble(m_lastNum) / 
+                                Convert.ToDouble(m_lastNum) /
                                 Convert.ToDouble(m_lastInput));
                         }
                         break;

@@ -29,7 +29,7 @@ namespace SynchronousOperation
 
             Console.WriteLine(
                 "Total Time = {0} second(s)!",
-                sw.ElapsedMilliseconds/1000);
+                sw.ElapsedMilliseconds / 1000);
         }
 
         public static int RunSynchronousProcess()

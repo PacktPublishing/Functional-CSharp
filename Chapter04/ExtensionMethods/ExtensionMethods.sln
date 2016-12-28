@@ -1,59 +1,48 @@
-<<<<<<< HEAD
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.25928.0
+VisualStudioVersion = 15.0.26014.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{8886183E-B13E-4793-85EC-A8E8C601FF2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiggybackNamespace", "PiggybackNamespace\PiggybackNamespace.csproj", "{EE7D3E12-8005-4770-9880-0E062954CFCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiggybackNamespace", "PiggybackNamespace\PiggybackNamespace.csproj", "{BA2E172D-8825-416B-8C4A-D1C2C9D40798}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE7D3E12-8005-4770-9880-0E062954CFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE7D3E12-8005-4770-9880-0E062954CFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE7D3E12-8005-4770-9880-0E062954CFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE7D3E12-8005-4770-9880-0E062954CFCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Debug|x64.ActiveCfg = Debug|x64
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Debug|x64.Build.0 = Debug|x64
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Debug|x86.ActiveCfg = Debug|x86
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Debug|x86.Build.0 = Debug|x86
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Release|x64.ActiveCfg = Release|x64
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Release|x64.Build.0 = Release|x64
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Release|x86.ActiveCfg = Release|x86
+		{8886183E-B13E-4793-85EC-A8E8C601FF2D}.Release|x86.Build.0 = Release|x86
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Debug|x64.ActiveCfg = Debug|x64
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Debug|x64.Build.0 = Debug|x64
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Debug|x86.ActiveCfg = Debug|x86
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Debug|x86.Build.0 = Debug|x86
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Release|x64.ActiveCfg = Release|x64
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Release|x64.Build.0 = Release|x64
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Release|x86.ActiveCfg = Release|x86
+		{BA2E172D-8825-416B-8C4A-D1C2C9D40798}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
-=======
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.25928.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiggybackNamespace", "PiggybackNamespace\PiggybackNamespace.csproj", "{EE7D3E12-8005-4770-9880-0E062954CFCB}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2690F06-A7D4-474C-9EA6-9EBCC3C6409A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE7D3E12-8005-4770-9880-0E062954CFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE7D3E12-8005-4770-9880-0E062954CFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE7D3E12-8005-4770-9880-0E062954CFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE7D3E12-8005-4770-9880-0E062954CFCB}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-EndGlobal
->>>>>>> origin/master

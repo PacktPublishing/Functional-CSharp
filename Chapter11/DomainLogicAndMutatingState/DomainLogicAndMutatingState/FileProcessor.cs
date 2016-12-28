@@ -11,7 +11,7 @@ namespace DomainLogicAndMutatingState
             string fileName)
         {
             return new FileContent(
-                fileName, 
+                fileName,
                 File.ReadAllLines(
                     fileName));
         }
@@ -22,7 +22,7 @@ namespace DomainLogicAndMutatingState
             return Directory
                 .GetFiles(
                     directoryName)
-                .Select(x => 
+                .Select(x =>
                     ReadFile(x))
                 .ToArray();
         }
@@ -37,7 +37,7 @@ namespace DomainLogicAndMutatingState
                     case ActionType.Create:
                     case ActionType.Update:
                         File.WriteAllLines(
-                            action.FileName, 
+                            action.FileName,
                             action.Content);
                         continue;
 

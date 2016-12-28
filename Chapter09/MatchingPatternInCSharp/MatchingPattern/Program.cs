@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MatchingPattern
 {
@@ -92,8 +88,8 @@ namespace MatchingPattern
 
             for (int i = s.Length - 1; i >= 0; i--)
             {
-                retVal += HexCharToByte(s[i]) * 
-                    (int) Math.Pow(0x10, iCnt++);
+                retVal += HexCharToByte(s[i]) *
+                    (int)Math.Pow(0x10, iCnt++);
             }
 
             return retVal;

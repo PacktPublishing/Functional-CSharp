@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Immutability
 {
@@ -36,7 +32,7 @@ namespace Immutability
         private readonly DateTime _memberSince;
 
         public UserMembership(
-            User user, 
+            User user,
             DateTime memberSince)
         {
             _user = user;
@@ -44,15 +40,15 @@ namespace Immutability
         }
 
         public UserMembership UpdateUser(
-            int userId, 
+            int userId,
             string name)
         {
             var newUser = new User(
-                userId, 
+                userId,
                 name);
 
             return new UserMembership(
-                newUser, 
+                newUser,
                 _memberSince);
         }
     }
@@ -63,7 +59,7 @@ namespace Immutability
         public string Name { get; }
 
         public User(
-            int id, 
+            int id,
             string name)
         {
             Id = id;

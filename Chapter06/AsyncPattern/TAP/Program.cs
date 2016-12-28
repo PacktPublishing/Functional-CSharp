@@ -188,13 +188,13 @@ namespace TAP
         {
             FileStream fs = File.OpenRead(filePath);
             byte[] readBuffer = new Byte[fs.Length];
-            Task<int> readTask = 
+            Task<int> readTask =
                 Task.Factory.FromAsync(
-                    (Func<byte[], 
-                        int, 
-                        int, 
-                        AsyncCallback, 
-                        object, 
+                    (Func<byte[],
+                        int,
+                        int,
+                        AsyncCallback,
+                        object,
                         IAsyncResult>)
                             fs.BeginRead,
                     (Func<IAsyncResult, int>)
@@ -210,8 +210,8 @@ namespace TAP
                 {
                     IsFinish = true;
                     Console.WriteLine(
-                        "Read {0} bytes from file {1}", 
-                        task.Result, 
+                        "Read {0} bytes from file {1}",
+                        task.Result,
                         filePath);
                 }
 

@@ -27,17 +27,17 @@ namespace DomainLogicAndMutatingState
             FileInfo fileInfo = new DirectoryInfo(
                 _directoryName)
                     .GetFiles()
-                    .OrderByDescending(x => 
+                    .OrderByDescending(x =>
                         x.LastWriteTime)
                     .First();
 
-            FileContent file = 
+            FileContent file =
                 _fileProcessor.ReadFile(
                     fileInfo.Name);
 
-            FileAction action = 
+            FileAction action =
                 _librarian.AddRecord(
-                    file, 
+                    file,
                     visitorName,
                     bookTitle,
                     returningDate);
@@ -49,7 +49,7 @@ namespace DomainLogicAndMutatingState
         public void RemoveRecord(
             string visitorName)
         {
-            FileContent[] files = 
+            FileContent[] files =
                 _fileProcessor.ReadDirectory(
                     _directoryName);
 

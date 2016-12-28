@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AggregateExample
 {
@@ -19,7 +17,7 @@ namespace AggregateExample
     {
         private static void AggregateString()
         {
-            List<string> listString = 
+            List<string> listString =
                 new List<string>()
                     {
                         "The",
@@ -33,7 +31,7 @@ namespace AggregateExample
                         "dog"
                     };
 
-            string stringAggregate = 
+            string stringAggregate =
                 listString.Aggregate(
                     (strAll, str) => strAll + " " + str);
 
@@ -45,11 +43,11 @@ namespace AggregateExample
     {
         private static void AggregateInt()
         {
-            List<int> listInt = 
+            List<int> listInt =
                 new List<int>()
                     { 1, 2, 3, 4, 5, 6 };
 
-            int addition = 
+            int addition =
                 listInt.Aggregate(
                     (sum, i) => sum + i);
 

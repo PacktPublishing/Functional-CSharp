@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace LazyInitialization
 {
@@ -14,7 +12,7 @@ namespace LazyInitialization
 
     public partial class Program
     {
-        private static  void LazyInitName(string NameOfPerson)
+        private static void LazyInitName(string NameOfPerson)
         {
             Lazy<PersonName> pn =
                 new Lazy<PersonName>(

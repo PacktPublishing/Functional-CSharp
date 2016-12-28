@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NonStrictEvaluation
 {
@@ -106,7 +102,7 @@ namespace NonStrictEvaluation
     public partial class Program
     {
         private static int OuterFormulaNonStrict(
-            int x, 
+            int x,
             Func<int, int, int> yzFunc)
         {
             int y = 3;

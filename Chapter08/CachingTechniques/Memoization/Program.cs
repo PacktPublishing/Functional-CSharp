@@ -48,8 +48,8 @@ namespace Memoization
                 Console.WriteLine(
                     "Time elapsed ({0}): {1,8} ns",
                     i,
-                    sw.ElapsedTicks * 
-                        1000000000 / 
+                    sw.ElapsedTicks *
+                        1000000000 /
                         Stopwatch.Frequency);
             }
         }
@@ -100,8 +100,8 @@ namespace Memoization
                 Console.WriteLine(
                     "Time elapsed ({0}): {1,8} ns",
                     i,
-                    sw.ElapsedTicks * 
-                        1000000000 / 
+                    sw.ElapsedTicks *
+                        1000000000 /
                         Stopwatch.Frequency);
             }
         }

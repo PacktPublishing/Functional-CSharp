@@ -58,7 +58,7 @@ namespace AccumulatorPassingStyle
             if (intNumber == 0)
             {
                 Console.WriteLine(
-                    "The result is " + 
+                    "The result is " +
                     accumulator);
                 return;
             }

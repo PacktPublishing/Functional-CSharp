@@ -16,7 +16,7 @@ namespace TailRecursion
             int iTotalRecursion)
         {
             Console.WriteLine(
-                "Value: " + 
+                "Value: " +
                 iTotalRecursion);
 
             if (iTotalRecursion == 0)

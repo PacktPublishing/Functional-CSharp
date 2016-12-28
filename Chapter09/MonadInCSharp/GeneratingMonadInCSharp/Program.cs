@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace GeneratingMonadInCSharp
@@ -70,14 +68,14 @@ namespace GeneratingMonadInCSharp
     {
         private static Nullable<T> MultipliedByTwoFunction<T>(
             Nullable<T> iNullable,
-            Func<T, T> funcDelegate) 
+            Func<T, T> funcDelegate)
                 where T : struct
         {
             if (iNullable.HasValue)
             {
-                T unWrappedInt = 
+                T unWrappedInt =
                     iNullable.Value;
-                T multipliedByTwo = 
+                T multipliedByTwo =
                     funcDelegate(unWrappedInt);
                 return new Nullable<T>(
                     multipliedByTwo);
@@ -123,9 +121,9 @@ namespace GeneratingMonadInCSharp
         {
             return new Lazy<R>(() =>
             {
-                V unWrappedInt = 
+                V unWrappedInt =
                     lazy.Value;
-                R multipliedByTwo = 
+                R multipliedByTwo =
                     function(unWrappedInt);
                 return multipliedByTwo;
             });
@@ -144,7 +142,7 @@ namespace GeneratingMonadInCSharp
 
     public partial class Program
     {
-        private static Nullable<R> 
+        private static Nullable<R>
             MultipliedByTwoFunctionSpecial<V, R>(
                 Nullable<V> nullable,
                 Func<V, Nullable<R>> function)
@@ -153,9 +151,9 @@ namespace GeneratingMonadInCSharp
         {
             if (nullable.HasValue)
             {
-                V unWrappedInt = 
+                V unWrappedInt =
                     nullable.Value;
-                Nullable<R> multipliedByTwo = 
+                Nullable<R> multipliedByTwo =
                     function(unWrappedInt);
                 return multipliedByTwo;
             }
@@ -186,29 +184,29 @@ namespace GeneratingMonadInCSharp
 
     public partial class Program
     {
-        private static Lazy<R> 
+        private static Lazy<R>
             MultipliedByTwoFunctionSpecial<V, R>(
                 Lazy<V> lazy,
                 Func<V, Lazy<R>> function)
         {
             return new Lazy<R>(() =>
             {
-                V unwrappedValue = 
+                V unwrappedValue =
                     lazy.Value;
-                Lazy<R> resultValue = 
+                Lazy<R> resultValue =
                     function(unwrappedValue);
                 return resultValue.Value;
             });
         }
 
-        private static async Task<R> 
+        private static async Task<R>
             MultipliedByTwoFunctionSpecial<V, R>(
                 Task<V> task,
                 Func<V, Task<R>> function)
         {
-            V unwrappedValue = 
+            V unwrappedValue =
                 await task;
-            Task<R> resultValue = 
+            Task<R> resultValue =
                 function(unwrappedValue);
             return await resultValue;
         }
@@ -223,7 +221,7 @@ namespace GeneratingMonadInCSharp
         {
             foreach (V unwrappedValue in sequence)
             {
-                IEnumerable<R> resultValue = 
+                IEnumerable<R> resultValue =
                     function(unwrappedValue);
                 foreach (R r in resultValue)
                     yield return r;

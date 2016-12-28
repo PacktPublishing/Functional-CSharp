@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NthElementImperative
 {
@@ -54,7 +52,7 @@ namespace NthElementImperative
             List<int> list)
         {
             Console.WriteLine(
-                String.Format("{0}", 
+                String.Format("{0}",
                 titleHeader));
 
             foreach (int i in list)

@@ -40,8 +40,8 @@ namespace AsyncAwait
             byte[] buffer = new byte[fs.Length];
             int totalBytes =
                 await fs.ReadAsync(
-                    buffer, 
-                    0, 
+                    buffer,
+                    0,
                     (int)fs.Length);
             Console.WriteLine("Read {0} bytes.", totalBytes);
 

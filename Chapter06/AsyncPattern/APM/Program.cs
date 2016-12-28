@@ -17,11 +17,11 @@ namespace APM
     {
         public static void ReadFile()
         {
-            FileStream fs = 
+            FileStream fs =
                 File.OpenRead(
                     @"..\..\..\LoremIpsum.txt");
             byte[] buffer = new byte[fs.Length];
-            int totalBytes = 
+            int totalBytes =
                 fs.Read(buffer, 0, (int)fs.Length);
             Console.WriteLine("Read {0} bytes.", totalBytes);
             fs.Dispose();
@@ -32,11 +32,11 @@ namespace APM
     {
         public static void ReadAsyncFile()
         {
-            FileStream fs = 
+            FileStream fs =
                 File.OpenRead(
                     @"..\..\..\LoremIpsum.txt");
             byte[] buffer = new byte[fs.Length];
-            IAsyncResult result = 
+            IAsyncResult result =
                 fs.BeginRead(
                     buffer, 0, (int)fs.Length, OnReadComplete, fs);
 
@@ -53,9 +53,9 @@ namespace APM
 
         private static void OnReadComplete(IAsyncResult result)
         {
-            FileStream fStream = 
+            FileStream fStream =
                 (FileStream)result.AsyncState;
-            int totalBytes = 
+            int totalBytes =
                 fStream.EndRead(result);
             Console.WriteLine(
                 "Read {0} bytes.", totalBytes);

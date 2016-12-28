@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AmplifierOfTypes
 {
@@ -105,7 +103,7 @@ namespace AmplifierOfTypes
                     s);
             }
 
-            IEnumerable<string> stringSorted = 
+            IEnumerable<string> stringSorted =
                 SortAscending(stringEnumerable);
 
             Console.WriteLine();

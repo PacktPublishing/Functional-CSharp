@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace PiggybackNamespace
 {
@@ -9,8 +6,8 @@ namespace PiggybackNamespace
     {
         static void Main(string[] args)
         {
-            int ii = 10;
-            Console.WriteLine(ii.Square());
+            int i = 60;
+            Console.WriteLine(i.Square());
         }
     }
 }

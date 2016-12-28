@@ -2,8 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LazyEnumeration
 {
@@ -20,10 +18,10 @@ namespace LazyEnumeration
         private static void GetFibonnacciNumbers(
             int totalNumber)
         {
-            FibonacciNumbers fibNumbers = 
+            FibonacciNumbers fibNumbers =
                 new FibonacciNumbers();
 
-            foreach (Int64 number in 
+            foreach (Int64 number in
                 fibNumbers.Take(totalNumber))
             {
                 Console.Write(number);
@@ -36,7 +34,7 @@ namespace LazyEnumeration
 
     public partial class Program
     {
-        public class FibonacciNumbers 
+        public class FibonacciNumbers
             : IEnumerable<Int64>
         {
             public IEnumerator<Int64> GetEnumerator()
@@ -53,7 +51,7 @@ namespace LazyEnumeration
 
     public partial class Program
     {
-        public class FibEnumerator 
+        public class FibEnumerator
             : IEnumerator<Int64>
         {
             public FibEnumerator()

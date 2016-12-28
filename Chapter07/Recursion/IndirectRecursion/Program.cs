@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IndirectRecursion
 {
@@ -19,7 +15,7 @@ namespace IndirectRecursion
         private static void CheckNumberFive()
         {
             Console.WriteLine(
-                "Is 5 even number? {0}", 
+                "Is 5 even number? {0}",
                 IsEven(5));
         }
     }

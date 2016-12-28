@@ -28,7 +28,7 @@ namespace CodeReadability
             {
                 retValue += s.First()
                     .ToString()
-                    .ToUpper() 
+                    .ToUpper()
                     + s.Substring(1)
                     + " ";
             }

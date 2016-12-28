@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Precomputation
 {
@@ -31,8 +28,8 @@ namespace Precomputation
             Console.Write("Second Number: ");
             int iInput2 = Convert.ToInt32(Console.ReadLine());
 
-            int iOutput1 = (int) Math.Pow(iInput1, 2);
-            int iOutput2 = (int) Math.Pow(iInput2, 2);
+            int iOutput1 = (int)Math.Pow(iInput1, 2);
+            int iOutput2 = (int)Math.Pow(iInput2, 2);
 
             Console.WriteLine(
                 "2 the power of {0} is {1}",
@@ -63,7 +60,7 @@ namespace Precomputation
             int[] powerOfTwos = new int[100];
             for (int i = 0; i < 100; i++)
             {
-                powerOfTwos[i] = (int) Math.Pow(i, 2);
+                powerOfTwos[i] = (int)Math.Pow(i, 2);
             }
 
             Console.WriteLine("WithPrecomputation()");
@@ -107,7 +104,7 @@ namespace Precomputation
             int[] powerOfTwos = new int[100];
             for (int i = 0; i < 100; i++)
             {
-                powerOfTwos[i] = (int) Math.Pow(i, 2);
+                powerOfTwos[i] = (int)Math.Pow(i, 2);
             }
 
             Console.WriteLine("WithPrecomputationFunctional()");

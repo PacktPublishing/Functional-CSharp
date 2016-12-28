@@ -6,7 +6,7 @@ namespace RefactoringIterationToRecursion
     {
         static void Main(string[] args)
         {
-            int[] intDataArray = 
+            int[] intDataArray =
                 {8, 10, 24, -1, 98, 47, -101, 39 };
 
             //int iMaxNumber = FindMaxIteration(intDataArray);
@@ -40,7 +40,7 @@ namespace RefactoringIterationToRecursion
     public partial class Program
     {
         public static int FindMaxRecursive(
-            int[] intArray, 
+            int[] intArray,
             int iStartIndex = 0)
         {
             if (iStartIndex == intArray.Length - 1)
@@ -52,7 +52,7 @@ namespace RefactoringIterationToRecursion
                 return Math.Max(
                     intArray[iStartIndex],
                     FindMaxRecursive(
-                        intArray, 
+                        intArray,
                         iStartIndex + 1));
             }
         }

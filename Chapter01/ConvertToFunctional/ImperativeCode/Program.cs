@@ -22,7 +22,7 @@ namespace ImperativeCode
                 Encoding
                     .UTF8
                     .GetString(buffer)
-                    .Split(new[] { Environment.NewLine, }, 
+                    .Split(new[] { Environment.NewLine, },
                         StringSplitOptions.RemoveEmptyEntries)
                     .Select((s, ix) => Tuple.Create(ix, s))
                     .ToDictionary(k => k.Item1, v => v.Item2);
@@ -60,8 +60,8 @@ namespace ImperativeCode
     public static partial class Utility
     {
         public static string GenerateOrderedList(
-            IDictionary<int, string> options, 
-            string id, 
+            IDictionary<int, string> options,
+            string id,
             bool includeSun)
         {
             var html = new StringBuilder();
@@ -75,8 +75,8 @@ namespace ImperativeCode
 
             foreach (var opt in options)
             {
-                html.AppendFormat("\t<li value=\"{0}\">{1}</li>", 
-                    opt.Key, 
+                html.AppendFormat("\t<li value=\"{0}\">{1}</li>",
+                    opt.Key,
                     opt.Value);
                 html.AppendLine();
             }

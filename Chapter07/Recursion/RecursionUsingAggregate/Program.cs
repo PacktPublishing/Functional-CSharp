@@ -16,9 +16,9 @@ namespace RecursionUsingAggregate
     {
         private static void GetFactorialAggregate(int intNumber)
         {
-            IEnumerable<int> ints = 
+            IEnumerable<int> ints =
                 Enumerable.Range(1, intNumber);
-            int factorialNumber = 
+            int factorialNumber =
                 ints.Aggregate((f, s) => f * s);
             Console.WriteLine(
                 "{0}! (using Aggregate) is {1}",

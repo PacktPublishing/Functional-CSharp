@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 namespace DomainLogicAndMutatingState
 {
@@ -18,14 +17,14 @@ namespace DomainLogicAndMutatingState
     {
         public static void LibrarianshipInvocation()
         {
-            Librarianship librarian = 
+            Librarianship librarian =
                 new Librarianship(5);
 
             for (int i = 0; i < bookList.Count; i++)
             {
                 librarian.AddRecord(
                     GetLastLogFile(
-                        AppDomain.CurrentDomain.BaseDirectory),
+                        Directory.GetCurrentDirectory()),
                     bookList[i].Borrower,
                     bookList[i].Title,
                     DateTime.Now.AddDays(i));
@@ -57,7 +56,7 @@ namespace DomainLogicAndMutatingState
         public static void LibrarianshipImmutableInvocation()
         {
             AppService appService = new AppService(
-                AppDomain.CurrentDomain.BaseDirectory);
+                Directory.GetCurrentDirectory());
 
             for (int i = 0; i < bookList.Count; i++)
             {
@@ -98,7 +97,7 @@ namespace DomainLogicAndMutatingState
             string LogDirectory)
         {
             string[] logFiles = Directory.GetFiles(
-                LogDirectory, 
+                LogDirectory,
                 "LibraryLog_????.txt");
 
             if (logFiles.Length > 0)

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AmplifiedFuncType
 {
@@ -49,9 +45,9 @@ namespace AmplifiedFuncType
         {
             if (nullableInt.HasValue)
             {
-                int unWrappedInt = 
+                int unWrappedInt =
                     nullableInt.Value;
-                int multipliedByTwo = 
+                int multipliedByTwo =
                     unWrappedInt * 2;
                 return GetNullableFromInt(
                     multipliedByTwo);
@@ -87,9 +83,9 @@ namespace AmplifiedFuncType
         private static Func<int> MultipliedByTwo(
             Func<int> funcDelegate)
         {
-            int unWrappedFunc = 
+            int unWrappedFunc =
                 funcDelegate();
-            int multipliedByTwo = 
+            int multipliedByTwo =
                 unWrappedFunc * 2;
             return GetFuncFromInt(
                 multipliedByTwo);
@@ -103,7 +99,7 @@ namespace AmplifiedFuncType
         {
             return () =>
             {
-                int unWrappedFunc = 
+                int unWrappedFunc =
                     funcDelegate();
                 int multipliedByTwo =
                     unWrappedFunc * 2;
